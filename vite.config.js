@@ -9,10 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: "./index.html",
-        MPS1620P: "./MPS1620P.html",
-        MPS2520P: "./MPS2520P.html",
         thanks: "./thanks.html",
-        privacy: "./privacy.html",
       },
     },
   },
