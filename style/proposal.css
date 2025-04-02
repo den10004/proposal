@@ -1,9 +1,21 @@
+.layout-proposal {
+    max-width: 1590px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
 .proposal {
     margin-top: 140px;
     background-image: url(./../images/bg-proposal.webp);
     width: 100%;
     height: 677px;
     background-repeat: no-repeat;
+}
+
+.proposal-min {
+    display: none;
 }
 
 .proposal>h4 {
@@ -37,5 +49,110 @@
     height: 230px;
     padding: 20px 40px 20px 40px;
     box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .layout-proposal {
+        max-width: 1195px;
+    }
+
+    .proposal {
+        height: 550px;
+        margin-top: 70px;
+    }
+
+    .proposal__form>textarea {
+        height: 190px;
+    }
+
+    .proposal>h4 {
+        font-size: 40px;
+        padding-top: 70px;
+    }
+
+    .proposal__form {
+        padding: 0 70px 0 70px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .layout-proposal {
+        max-width: 808px;
+    }
+
+    .proposal>h4 {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .proposal__form {
+        padding: 0 30px 0 30px;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 70px calc(100% - 100px);
+        grid-template-rows: 50px 50px 230px;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+
+    .proposal__form>textarea {
+        height: 260px;
+    }
+
+    .proposal__form>label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .proposal>h4 {
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .layout-proposal {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .proposal {
+        margin-top: 20px;
+        background-image: url(./../images/bg-proposal-min.webp);
+        height: 492px;
+        background-repeat: no-repeat;
+    }
+
+    .proposal>h4 {
+        display: none;
+    }
+
+    .proposal-min {
+        display: flex;
+        font-size: 24px;
+        color: var(--text);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+
+    .proposal__form {
+        margin-top: 0px;
+        padding: 20px 20px 0 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15px 40px 15px 40px 15px 270px;
+        row-gap: 10px;
+    }
+
+    .proposal__form>label {
+        text-align: left;
+        margin-top: 0px;
+    }
 
 }
