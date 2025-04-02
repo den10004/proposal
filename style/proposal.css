@@ -1,0 +1,41 @@
+.proposal {
+    margin-top: 140px;
+    background-image: url(./../images/bg-proposal.webp);
+    width: 100%;
+    height: 677px;
+    background-repeat: no-repeat;
+}
+
+.proposal>h4 {
+    font-size: 60px;
+    color: var(--color-white);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.proposal__form {
+    padding: 0 90px 0 70px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 152px calc(100% - 193px);
+    grid-template-rows: 50px 50px 230px;
+    column-gap: 45px;
+    row-gap: 20px;
+}
+
+.proposal__form>label {
+    font-size: 16px;
+    color: var(--color-white);
+    line-height: 1.2;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.proposal__form>textarea {
+    height: 230px;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+
+}
