@@ -1,5 +1,5 @@
 .layout-proposal {
-    max-width: 1590px;
+    max-width: 1560px;
     padding: 0 20px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -28,7 +28,7 @@
 }
 
 .proposal__form {
-    padding: 0 90px 0 70px;
+    padding: 0 70px 0 70px;
     margin-top: 70px;
     display: grid;
     grid-template-columns: 152px calc(100% - 193px);
@@ -55,8 +55,19 @@
 
 @media screen and (max-width: 1400px) {
     .layout-proposal {
-        max-width: 1195px;
+        max-width: 1175px;
     }
+
+    .proposal__form {
+        padding: 0 70px 0 70px;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 152px calc(100% - 193px);
+        grid-template-rows: 50px 50px 230px;
+        column-gap: 45px;
+        row-gap: 20px;
+    }
+
 
     .proposal {
         height: 550px;
@@ -73,7 +84,6 @@
     }
 
     .proposal__form {
-        padding: 0 70px 0 70px;
         margin-top: 50px;
     }
 }
