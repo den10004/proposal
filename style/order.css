@@ -34,8 +34,8 @@
     background-repeat: no-repeat;
     padding: 65px 0 65px 70px;
     display: flex;
-    border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .order__gift>img {
@@ -277,6 +277,9 @@
 
     .order__gift {
         width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
     }
 
     .order__gift>p {
