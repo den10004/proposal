@@ -1,0 +1,234 @@
+.consult {
+    margin-top: 125px;
+    padding: 40px 0 30px 0;
+    background-color: var(--gray-border);
+}
+
+
+.consult__block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.consult__block>img {
+    width: 328px;
+    height: 328px;
+    border-radius: 50%;
+}
+
+.consult__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.consult__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.consult__desc>div:first-child {
+    border-bottom: 1px solid #b2b5b9;
+}
+
+.consult__desc>div>h3 {
+    font-size: 40px;
+    color: var(--text);
+    font-weight: bold;
+    line-height: 1;
+    margin: 40px 0 25px 0;
+}
+
+.consult__desc>div>h3>span {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.consult__write {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.consult__write>div {
+    display: flex;
+}
+
+.consult__write>p {
+    width: 340px;
+    font-size: 24px;
+    color: var(--text);
+    padding-right: 40px;
+}
+
+.consult__write>div>a>img {
+    width: 57px;
+}
+
+.whatsApp {
+    margin-right: 35px;
+}
+
+
+.consult__btn {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.consult__btn>button {
+    width: 457px;
+    color: var(--color-white);
+    font-size: 26px;
+    background-color: var(--color-btb-st);
+    padding: 35px 0;
+    margin-bottom: 35px;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .consult {
+        padding: 50px 0;
+    }
+
+    .consult__block>img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .consult__desc {
+        margin-left: 55px;
+    }
+
+    .consult__desc>div>h3 {
+        font-size: 24px;
+        margin: 50px 0 30px 0;
+    }
+
+    .consult__desc>div>h3>span {
+        font-size: 18px;
+    }
+
+    .consult__write>p {
+        width: 260px;
+        font-size: 18px;
+        padding-right: 40px;
+    }
+
+    .consult__write>div>a>img {
+        width: 40px;
+    }
+
+    .whatsApp {
+        margin-right: 25px;
+    }
+
+    .consult__btn>button {
+        width: 320px;
+        font-size: 20px;
+        padding: 25px 0;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .consult__content {
+        flex-direction: column;
+        width: 454px;
+        padding-left: 10px;
+    }
+
+    .consult {
+        padding: 45px 0;
+    }
+
+    .consult__desc>div>h3 {
+        font-size: 24px;
+        margin-top: 0px;
+    }
+
+    .consult__btn>button {
+        width: 300px;
+        font-size: 16px;
+        padding: 20px 0;
+        margin-bottom: 0px;
+    }
+
+    .consult__desc {
+        margin-left: 0px;
+    }
+
+    .whatsApp {
+        margin-right: 15px;
+    }
+
+    .consult__write {
+        margin-top: 30px;
+    }
+
+
+    .consult__write>p {
+        font-size: 16px;
+        padding-right: 20px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .consult__block {
+        flex-direction: column;
+    }
+
+    .consult__write {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .consult__content {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 25px;
+    }
+
+    .consult__block {
+        margin-top: -90px;
+    }
+
+    .consult__block>img {
+        margin: 0 auto;
+    }
+
+    .consult__desc>div>h3 {
+        text-align: center;
+    }
+
+    .consult__write>p {
+        text-align: center;
+    }
+
+    .consult__btn>button {
+        margin: 0 auto;
+    }
+
+    .consult__write>div {
+        display: flex;
+        margin: 25px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .consult__btn>button {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .consult__block>img {
+        width: 220px;
+        height: 220px;
+    }
+}
