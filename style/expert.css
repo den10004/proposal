@@ -1,0 +1,157 @@
+.expert {
+    margin-top: 85px;
+}
+
+.expert>h4 {
+    font-size: 24px;
+    color: var(--text);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.expert>p {
+    font-size: 20px;
+    color: var(--text);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.expert__bottom {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expert__bottom>div:first-child {
+    width: 457px;
+    color: var(--color-white);
+    font-size: 26px;
+    background-color: var(--color-btb-st);
+}
+
+.expert__bottom>div:first-child>a {
+    text-align: center;
+    display: flow;
+    padding: 35px 0;
+}
+
+
+.expert__bottom>div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.expert__bottom>div>img {
+    margin-right: 30px;
+    width: 144px;
+}
+
+.expert__bottom>div>p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .expert {
+        margin-top: 50px;
+    }
+
+    .expert>p {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .expert__bottom>div:first-child {
+        width: 262px;
+        font-size: 20px;
+    }
+
+    .expert__bottom>div:first-child>a {
+        padding: 26px 0;
+    }
+
+    .expert__bottom>div>p {
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) {
+    .expert {
+        margin-top: 30px;
+    }
+
+    .expert>p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .expert__bottom>div:first-child {
+        width: 205px;
+        font-size: 16px;
+    }
+
+    .expert__bottom>div:first-child>a {
+        padding: 20px 0;
+    }
+
+    .expert__bottom>div>p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .expert>p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .expert__bottom>div>img {
+        width: 115px;
+    }
+
+    .expert__bottom>div>p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .expert__bottom {
+        margin-top: 15px;
+        flex-direction: column-reverse;
+    }
+
+    .expert__bottom>div:first-child {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .expert__bottom>div>img {
+        margin-right: 0px;
+    }
+
+    .expert__bottom>div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .expert__bottom>div:first-child {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .expert__bottom>div>img {
+        width: 90px;
+    }
+}
