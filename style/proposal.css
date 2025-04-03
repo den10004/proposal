@@ -124,6 +124,7 @@
 }
 
 
+
 @media screen and (max-width: 600px) {
     .layout-proposal {
         max-width: 100%;
@@ -164,5 +165,4 @@
         text-align: left;
         margin-top: 0px;
     }
-
 }
