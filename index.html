@@ -85,7 +85,7 @@
       <section class="proposal">
         <h4>Коммерческое предложение №27</h4>
 
-        <form class="proposal__form">
+        <form class="proposal__form" id="consultFormMain">
           <label>Клиент: </label>
           <input type="text" required />
           <label>Город: </label>
@@ -221,7 +221,14 @@
               </div>
             </div>
             <div class="consult__btn">
-              <button>Консультация эксперта</button>
+              <button
+                class="cosulationOpenModal"
+                data-title="получите консультацию эксперта"
+                data-btn="Консультация эксперта"
+                data-sub="Получить консультацию эксперта"
+              >
+                Консультация эксперта
+              </button>
             </div>
           </div>
         </div>
@@ -231,8 +238,8 @@
     <div class="layout">
       <section class="order">
         <h3>
-          Оплатите заказ <br class="order-hr-br" />
-          до 15 апреля 2025<br />
+          Оплатите заказ <br class="order-hr-br" />до
+          <span class="discount-date"></span> <br />
           и получите ресивер в подарок
         </h3>
         <div class="order__content">
@@ -260,7 +267,14 @@
             </div>
           </div>
         </div>
-        <button>Оформить заказ</button>
+        <button
+          class="cosulationOpenModal"
+          data-title="на оформление заказа"
+          data-btn="Оформить заказ"
+          data-sub="Оформить заказ"
+        >
+          Оформить заказ
+        </button>
       </section>
     </div>
 

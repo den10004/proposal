@@ -5,6 +5,10 @@ const popup = document.querySelectorAll(".popup");
 const closeAllModal = document.querySelectorAll(".closeAllModal");
 const openCompilationModal = document.querySelectorAll(".cosulationOpenModal");
 const popupConsultation = document.querySelector(".popup-consultation");
+const discountDate = document.querySelector(".discount-date");
+import { discount } from "./variables";
+
+discountDate.innerHTML = `${discount}`;
 
 function openHeader() {
   mainMenu.style.display = "block";
