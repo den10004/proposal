@@ -246,17 +246,17 @@
             <div class="order-triangle"></div>
           </div>
           <div class="order__timer">
-            <p>До конца акции осталось:</p>
+            <p id="timer-info">До конца акции осталось:</p>
 
-            <div class="order__time">
+            <div class="order__time" id="timer">
               <div class="order__label">дней</div>
               <div class="order__label">часов</div>
               <div class="order__label">минут</div>
               <div class="order__label">секунд</div>
-              <div class="order__digit digit1">12</div>
-              <div class="order__digit digit2">22</div>
-              <div class="order__digit digit3">33</div>
-              <div class="order__digit digit4">54</div>
+              <div class="order__digit digit1" id="days">12</div>
+              <div class="order__digit digit2" id="hours">22</div>
+              <div class="order__digit digit3" id="minutes">33</div>
+              <div class="order__digit digit4" id="seconds">54</div>
             </div>
           </div>
         </div>
@@ -373,42 +373,9 @@
     </div>
   </body>
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/timer.js"></script>
   <script type="module" src="./js/telMask.js"></script>
   <script type="module" src="./js/metrika.js"></script>
-
-  <script>
-    var swiper = new Swiper(".sound__slider", {
-      loop: true,
-      slidesPerView: 5,
-      spaceBetween: 65,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        400: {
-          slidesPerView: 1.5,
-        },
-        425: {
-          slidesPerView: 2,
-        },
-        1300: {
-          slidesPerView: 3,
-        },
-        1400: {
-          slidesPerView: 4,
-          spaceBetween: 50,
-        },
-        1401: {
-          slidesPerView: 5,
-          spaceBetween: 65,
-        },
-      },
-      navigation: {
-        prevEl: ".cardsSlider-button-prev",
-        nextEl: ".cardsSlider-button-next",
-      },
-    });
-  </script>
 
   <noscript>
     <div>

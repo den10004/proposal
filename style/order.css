@@ -95,8 +95,11 @@
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
+    width: 110px;
+    height: 110px;
     padding: 31px 29.3px 31px 29.3px;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .digit1 {
@@ -129,6 +132,8 @@
     .order__digit {
         font-size: 38px;
         padding: 17px 15.5px 17px 15.5px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -220,6 +225,8 @@
     .order__digit {
         font-size: 25px;
         padding: 15px 14px 15px 14px;
+        width: 64px;
+        height: 64px;
     }
 
     .order__time {
@@ -279,6 +286,7 @@
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
 
     }
 
@@ -329,8 +337,25 @@
         width: 100%;
     }
 
+    .order__digit {
+        width: 64px;
+        height: 64px;
+    }
+
     .order>h3 {
         text-align: left;
     }
+}
 
+@media screen and (max-width: 340px) {
+    .order__digit {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .order__time {
+        grid-column-gap: 5px;
+    }
 }
