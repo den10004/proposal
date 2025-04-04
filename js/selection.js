@@ -4,8 +4,8 @@ const formatter = new Intl.NumberFormat("ru-RU", {
   minimumFractionDigits: 2,
   maximumFractionDigits: 2,
 });
-
-const userElements = product.map(function (p) {
+let total = 0;
+const listElements = product.map(function (p) {
   const div = document.createElement("ul");
   div.classList.add("selection-table", "section-tablebody");
 
@@ -29,14 +29,13 @@ const userElements = product.map(function (p) {
   pdiv2.textContent = p.quantity;
   div2.appendChild(pdiv2);
 
-  let cost = p.quantity * p.price;
-
   const div3 = document.createElement("li");
   div2.classList.add("div3", "div-style");
   const pdiv3 = document.createElement("p");
   pdiv3.textContent = formatter.format(p.price);
   div3.appendChild(pdiv3);
 
+  let cost = p.quantity * p.price;
   const div4 = document.createElement("li");
   div2.classList.add("div4", "div-style");
   const pdiv4 = document.createElement("p");
@@ -50,10 +49,17 @@ const userElements = product.map(function (p) {
   div.appendChild(div2);
   div.appendChild(div3);
   div.appendChild(div4);
+
+  total += cost;
   return div;
 });
 
 const container = document.getElementById("render-list");
-userElements.forEach(function (element) {
+const totalContainer = document.querySelector(".selection__total");
+console.log(totalContainer);
+listElements.forEach(function (element) {
   container.appendChild(element);
 });
+
+totalContainer.innerHTML =
+  "<p>Итого: <span>	&nbsp;" + formatter.format(total) + "</span> </p>";
