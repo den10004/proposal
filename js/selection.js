@@ -26,21 +26,30 @@ const listElements = product.map(function (p) {
   const div2 = document.createElement("li");
   div2.classList.add("div2", "div-style");
   const pdiv2 = document.createElement("p");
+  const h6div2 = document.createElement("h6");
   pdiv2.textContent = p.quantity;
+  h6div2.textContent = `Кол-во (шт.)`;
+  div2.appendChild(h6div2);
   div2.appendChild(pdiv2);
 
   const div3 = document.createElement("li");
-  div2.classList.add("div3", "div-style");
+  div3.classList.add("div3", "div-style");
   const pdiv3 = document.createElement("p");
+  const h6div3 = document.createElement("h6");
   pdiv3.textContent = formatter.format(p.price);
+  h6div3.textContent = `Цена (₽)`;
+  div3.appendChild(h6div3);
   div3.appendChild(pdiv3);
 
   let cost = p.quantity * p.price;
   const div4 = document.createElement("li");
-  div2.classList.add("div4", "div-style");
+  div4.classList.add("div4", "div-style");
   const pdiv4 = document.createElement("p");
+  const h6div4 = document.createElement("h6");
   const strong4 = document.createElement("strong");
   strong4.textContent = formatter.format(cost);
+  h6div4.textContent = `Стоимость (₽)`;
+  div4.appendChild(h6div4);
   div4.appendChild(pdiv4);
   pdiv4.appendChild(strong4);
 
